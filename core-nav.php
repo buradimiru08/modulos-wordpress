@@ -1,3 +1,4 @@
+<?php
 // registro mi nav y luego lo lo importo a mi include con la siguiente línea ---> require get_template_directory() . '/core-nav.php';
 
 //declaro una funcion le doy nombre a mi función
@@ -11,3 +12,4 @@ if ( ! function_exists( 'custom_register_nav_menu' ) ) {
     }
     add_action( 'after_setup_theme', 'custom_register_nav_menu', 0 );
 }
+?>
