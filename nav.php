@@ -1,9 +1,9 @@
-//require get_template_directory() . '/core-nav.php';
-// llamo al archivo nav.php para ejecutar el array del menu y poder imprimir el menu donde quieras, para llamarlo solo usar: include get_template_directory() . '/core-nav.php';
+<?php //require get_template_directory() . '/core-nav.php';
+	// llamo al archivo nav.php para ejecutar el array del menu y poder imprimir el menu donde quieras, para llamarlo solo usar: include get_template_directory() . '/core-nav.php';
 
 
 
-<?php
+
 			wp_nav_menu(
 				array(
 					'theme_location' => 'nombre_menu',
