@@ -1,4 +1,4 @@
-// registro mi widget y luego lo lo importo a mi function.php con la siguiente línea ---> require get_template_directory() . '/core-zona-widget.php';
+<?php // registro mi widget y luego lo lo importo a mi function.php con la siguiente línea ---> require get_template_directory() . '/core-zona-widget.php';
 
 
 function widget_footer() {
@@ -16,3 +16,4 @@ function widget_footer() {
 	);
 }
 add_action( 'widgets_init', 'widget_footer');
+?>
