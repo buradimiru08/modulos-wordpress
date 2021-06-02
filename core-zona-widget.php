@@ -1,0 +1,18 @@
+// registro mi widget y luego lo lo importo a mi function.php con la siguiente línea ---> require get_template_directory() . '/core-zona-widget.php';
+
+
+function widget_footer() {
+	
+		register_sidebar(
+		array(
+			'name'          => esc_html__( 'Columna 3 footer', 'tema-para-alumnos-base' ),
+			'id'            => 'columna_tres_footer',
+			'description'   => esc_html__( 'Columna 3 del footer', 'tema-para-alumnos-base' ),
+			'before_widget' => '<section id="%1$s" class="widget col-12 col-md-3 %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+}
+add_action( 'widgets_init', 'widget_footer');
